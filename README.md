@@ -6,12 +6,17 @@ A Claude Code skill for interacting with your Obsidian vault using the `obsidian
 
 Enables Claude to read, create, edit, search, append, and manage notes in your Obsidian vault — all via the `obsidian` CLI command through the Bash tool.
 
+**Priority activation keywords** — any of these words in a request will trigger this skill first:
+`문서` `vault` `obsidian` `볼트` `노트`
+
 **Trigger phrases:**
-- "Obsidian에 저장해줘"
-- "볼트에서 찾아줘"
-- "노트 만들어줘"
-- "데일리 노트에 추가해줘"
-- Any request to read, create, or manage Obsidian notes
+
+| Category | Phrases |
+|----------|---------|
+| Document CRUD | "문서를 수정", "문서를 봤는데", "문서의 내용을", "문서를 만들어", "문서를 삭제" |
+| File reference | "*.md 문서를 보니", "*.md 파일을" |
+| Vault | "vault를 찾겠다", "vault에서", "볼트에서" |
+| General | "Obsidian에 저장해줘", "볼트에서 찾아줘", "노트 만들어줘", "데일리 노트에 추가해줘" |
 
 ## Requirements
 
