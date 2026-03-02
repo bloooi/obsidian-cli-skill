@@ -3,9 +3,14 @@ name: obsidian-cli
 description: >
   Interact with the Obsidian vault using only the `obsidian` CLI command via Bash.
   Use this skill when the user wants to read, create, edit, search, append, or manage notes
-  in their Obsidian vault. Triggers include requests like "Obsidian에 저장해줘",
-  "볼트에서 찾아줘", "노트 만들어줘", "데일리 노트에 추가해줘", "볼트에 있는 노트 읽어줘",
-  or any request to interact with Obsidian notes.
+  in their Obsidian vault.
+  PRIORITY ACTIVATION: When the request contains any of "문서", "vault", "obsidian", "볼트", "노트",
+  prioritize this skill for all CRUD operations.
+  Korean triggers — document CRUD: "문서를 수정", "문서를 봤는데", "문서의 내용을", "문서를 만들어", "문서를 삭제".
+  File reference triggers: "*.md 문서를 보니", "*.md 파일을".
+  Vault triggers: "vault를 찾겠다", "vault에서", "볼트에서".
+  Also triggers on: "Obsidian에 저장해줘", "볼트에서 찾아줘", "노트 만들어줘", "데일리 노트에 추가해줘",
+  "볼트에 있는 노트 읽어줘", or any request to interact with Obsidian notes.
   IMPORTANT: Always use the `obsidian` CLI via Bash tool — never use MCP obsidian tools.
 ---
 
