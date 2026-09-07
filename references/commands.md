@@ -161,7 +161,8 @@ obsidian files
 obsidian files folder="Projects"
 obsidian open file="Note Name"
 obsidian open path="folder/note.md"
-obsidian create title="New Note" content="content" folder="FolderName"
+obsidian create name="New Note" content="content"
+obsidian create path="FolderName/New Note.md" content="content"
 obsidian read file="Note Name"
 obsidian read file="Note Name" --copy
 obsidian append file="Note" content="Content"
@@ -170,6 +171,8 @@ obsidian move file="Note" folder="New Folder"
 obsidian rename file="Old Name" name="New Name"
 obsidian delete file="Note to Delete"
 ```
+
+Prefer path= for an exact vault-relative location. The current CLI may ignore title= and folder=, so verify the resulting file before cleanup.
 
 ### Folder Commands
 
